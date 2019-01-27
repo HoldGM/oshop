@@ -78,7 +78,7 @@ import {AdminAuthGuardService} from './admin-auth-guard.service';
       {
         path: 'admin/orders',
         component: AdminOrdersComponent,
-        canActivate: [AuthGuardService]
+        canActivate: [AuthGuardService, AdminAuthGuardService]
       },
       {
         path: 'my/orders',
